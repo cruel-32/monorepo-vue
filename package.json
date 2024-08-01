@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-vue",
+  "packageManager": "yarn@4.3.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:pinia": "yarn workspace @monorepo-vue/vue-pinia dev",
+    "lint:pinia": "yarn workspace @monorepo-vue/vue-pinia lint",
+    "dev:common": "yarn workspace @monorepo-vue/common dev",
+    "dev:storybook": "yarn workspace @monorepo-vue/common storybook",
+    "dev:all": "concurrently \"yarn workspace @monorepo-vue/vue-pinia dev\" \"yarn workspace @monorepo-vue/common storybook\"",
+    "lint": "eslint \"./src/**/*.{ts,js,tsx}\" --fix",
+    "lint:all": "yarn workspace @monorepo-vue/vue-pinia lint && yarn workspace @monorepo-vue/common lint"
+  },
+  "devDependencies": {
+    "@monorepo-vue/prettier-config": "workspace:*",
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "eslint": "^9.8.0",
+    "prettier": "^3.3.3"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@monorepo-vue/vue-pinia",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "beta": "vite --mode beta",
+    "build": "vue-tsc -b && vite build",
+    "lint": "eslint --fix",
+    "prettier": "prettier --write \"**/*.{js,vue,ts,css,html}\"",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@monorepo-vue/common": "workspace:*",
+    "@monorepo-vue/eslint-config": "workspace:*",
+    "@monorepo-vue/prettier-config": "workspace:*",
+    "eslint": "^9.8.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "vite-plugin-svgr": "^4.2.0",
+    "vue": "^3.4.31"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vue-tsc": "^2.0.24"
+  },
+  "prettier": "@monorepo-vue/prettier-config"
+}
