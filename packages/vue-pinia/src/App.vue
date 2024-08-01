@@ -16,3 +16,9 @@ import Button from '@monorepo-vue/common/src/stories/Button.vue';
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
+
+<style lang="scss" scoped>
+.read-the-docs {
+  color: #888;
+}
+</style>

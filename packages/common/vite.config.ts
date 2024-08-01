@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 import svgr from 'vite-plugin-svgr';
 import { fileURLToPath, URL } from 'node:url';
 
@@ -22,4 +22,4 @@ export default defineConfig({
     outDir: '../../dist/common',
     emptyOutDir: true,
   },
-})
+});
