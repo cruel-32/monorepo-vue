@@ -20,5 +20,8 @@
   "dependencies": {
     "eslint": "^9.8.0",
     "prettier": "^3.3.3"
+  },
+  "eslint.options": {
+    "overrideConfigFile": "packages/eslint-config/index.js"
   }
 }
